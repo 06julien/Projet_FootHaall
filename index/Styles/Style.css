@@ -1,0 +1,234 @@
+/* ...existing code... */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f8fb;           /* Fond principal */
+  color: #23272a;                /* Texte principal */
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23272a;           /* Header/fond sombre */
+  gap: 15.5rem;
+  color: #fff;
+  width: 100%;
+  height: 8rem;
+  padding: 18px 32px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10); /* Ombre */
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.navbar {
+  width: 65%;
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+  color: #00bfae;                /* Primaire turquoise */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #00bfae;                /* Primaire turquoise */
+}
+
+.se-connecter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.10); /* Ombre */
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #00bfae 0%, #7c3aed 100%), url("terrain.jpg") no-repeat center/cover;
+  color: #fff;
+  height: 48rem;
+  padding: 100px 20px 80px 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10); /* Ombre */
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 3rem;
+  margin-top: 1rem;
+  width: 100rem;
+}
+
+.title-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 35%;
+  height: 50%;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 43rem;
+  height: 32rem;
+  color: #fff !important;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.terrains {
+  padding: 48px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.terrains h2 {
+  margin-bottom: 28px;
+  font-size: 2em;
+  color: #00bfae;                /* Primaire turquoise */
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 18px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+.slider img {
+  width: 320px;
+  height: 210px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10); /* Ombre violette */
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+  border: 3px solid transparent;
+}
+.slider img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.18); /* Accent violet */
+  border: 3px solid #7c3aed;                       /* Accent violet */
+}
+
+.filters {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.filters input,
+.filters button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d8e0;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.filters input:focus {
+  border-color: #00bfae;         /* Primaire turquoise */
+  box-shadow: 0 0 0 2px #00bfae33;
+}
+.filters button {
+  background: #7c3aed;           /* Accent violet */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.filters button:hover,
+.filters button:focus {
+  background: #00bfae;           /* Primaire turquoise */
+}
+
+footer {
+  background: #23272a;           /* Header/fond sombre */
+  color: #fff;
+  padding: 16px 20px;
+  text-align: center;
+  margin-top: 48px;
+  border-radius: 16px 16px 0 0;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .slider img {
+    width: 90vw;
+    height: 160px;
+  }
+  .hero {
+    padding: 60px 10px 40px 10px;
+  }
+  .terrains {
+    padding: 24px 8px;
+  }
+}
+
+/* ...existing code...
