@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="stylesheet" href="/index/Styles/Style.css" />
     <title>Réservation de Terrains</title>
   </head>
   <body>
@@ -29,16 +29,16 @@
               <li><a href="index.html">Accueil</a></li>
             </div>
             <div>
-              <li><a href="OtherPage/resevation.html">Réservations</a></li>
+              <li><a href="/index/OtherPage/resevation.html">Réservations</a></li>
             </div>
             <!-- <div>
               <li><a href="">Tarifs</a></li>
             </div> -->
             <div>
-              <li><a href="OtherPage/nosterrains.html">Nos Terrains</a></li>
+              <li><a href="/index/OtherPage/nosterrains.html">Nos Terrains</a></li>
             </div>
             <div>
-              <li><a href="OtherPage/contact.html">Contact</a></li>
+              <li><a href="/index/OtherPage/contact.html">Contact</a></li>
             </div>
           </ul>
         </nav>
@@ -190,11 +190,18 @@
       </div>
     </section>
 
-    <h2>Nos Terrains</h2>
+    <div class="separateur-hero"> 
+      <h2>Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident inventore nemo ipsa odit, corporis </p>
+    </div>
+
+    <h2 class="title-sectionsecd">Nos Terrains</h2>
 
     <section class="terrains">
       <div class="filters">
-        <input
+        <h2 class="title-sectionsecd">Nos Terrains</h2>
+        <div>
+          <input
           type="text"
           placeholder="Filtrer par localisation..."
           id="filtreLocalisation"
@@ -203,6 +210,7 @@
         <button onclick="alert('Réservation directe en cours')">
           Réservation directe
         </button>
+        </div>
       </div>
       
       <div class="slider" id="slider">
