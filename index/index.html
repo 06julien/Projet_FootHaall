@@ -193,6 +193,17 @@
     <h2>Nos Terrains</h2>
 
     <section class="terrains">
+      <div class="filters">
+        <input
+          type="text"
+          placeholder="Filtrer par localisation..."
+          id="filtreLocalisation"
+        />
+        <button onclick="filtrerTerrains()">Filtrer</button>
+        <button onclick="alert('Réservation directe en cours')">
+          Réservation directe
+        </button>
+      </div>
       
       <div class="slider" id="slider">
         <div class="conponet">
@@ -217,71 +228,136 @@
             </div>
           </div>
         </div>
+        
+
         <div class="conponet">
           <div>
-            <a href=""><img src="terrain1.jpg" alt="Terrain 1" /></a>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
           </div>
-          <div>
-            <h5>nom du terrain</h5>
-            <p>Une petite descripetin</p>
-            <div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
             </div>
-          </div>
-        </div>
-        <div class="conponet">
-          <div>
-            <a href=""><img src="terrain1.jpg" alt="Terrain 1" /></a>
-          </div>
-          <div>
-            <h5>nom du terrain</h5>
-            <p>Une petite descripetin</p>
-            <div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="conponet">
-          <div>
-            <a href=""><img src="terrain1.jpg" alt="Terrain 1" /></a>
-          </div>
-          <div>
-            <h5>nom du terrain</h5>
-            <p>Une petite descripetin</p>
-            <div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
-              <div><i></i></div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
             </div>
           </div>
         </div>
 
 
-      </div>
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
 
-      <div class="filters">
-        <input
-          type="text"
-          placeholder="Filtrer par localisation..."
-          id="filtreLocalisation"
-        />
-        <button onclick="filtrerTerrains()">Filtrer</button>
-        <button onclick="alert('Réservation directe en cours')">
-          Réservation directe
-        </button>
-        <button onclick="alert('Chargement des autres terrains...')">
-          Voir plus
-        </button>
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="conponet">
+          <div>
+            <a href=""><img src="Images/Bing Image Creator.jpg" alt="Terrain 1" /></a>
+          </div>
+          <div class="title-terrain">
+            <h5>Nom du terrain</h5>
+            <p>Terrain 2D - étang pour Warmachine & Hordes, Age of Sigmar étang pour Warmachine & Hordes étang pour Warmachine & Hordes</p>
+            <div class="terrain-etoile">
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color"><i class="fa-solid fa-star"></i></div>
+              <div class="etoile-color-moitier"><i class="fa-solid fa-star"></i></div>
+              <div><i class="fa-solid fa-star"></i></div>
+
+              <div class="more"><i class="fa-solid fa-angle-down"></i></div>
+              <div>15</div>
+            </div>
+            <div class="Voir-resrve-terrain">
+              <button>Voir Et Réservez</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Voir-plus">
+          <button onclick="alert('Chargement des autres terrains...')">Voir plus</button>
+        </div>
+
+
+
       </div>
     </section>
 
