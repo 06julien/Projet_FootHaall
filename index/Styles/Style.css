@@ -19,7 +19,7 @@ header {
   justify-content: center;
   align-items: center;
   background: #f5f5f5;           /* Header/fond sombre */
-  gap: 10rem;
+  gap: 12rem;
   color: #fff;
   width: 100%;
   height: 5rem;
@@ -128,9 +128,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(120deg, #00bfae 0%, #7c3aed 100%), url("terrain.jpg") no-repeat center/cover;
-  color: #fff;
-  height: 48rem;
+  background: url("/index/Images/Classic\ Marble.jpeg") no-repeat center/cover;
+  color: #000000;
+  height: 45rem;
   padding: 100px 20px 80px 20px;
   text-align: center;
   border-radius: 0 0 10px 10px;
@@ -142,8 +142,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: left;
-  gap: 3rem;
-  margin-top: 1rem;
+  gap: 4rem;
   width: 100rem;
 }
 
@@ -152,26 +151,93 @@ header {
   flex-direction: column;
   justify-content: left;
   align-items: left;
+  gap: 10px;
   width: 35%;
   height: 50%;
 }
 
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-hero h1 span {
+  color: #00bfae;
+}
+
+.title-hero button {
+  margin-top: 2rem;
+}
+
 .hero h1 {
   font-size: 2.8em;
+  font-weight: 600;
   margin-bottom: 18px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+
+.media-social-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.media-social-hero div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  border: 2px solid rgba(0, 0, 0, 0.288);
+  border-radius: 10px;
+}
+
+
+
+
 
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  width: 43rem;
+  width: 38rem;
   height: 32rem;
   color: #fff !important;
 }
 
+.carousel .carousel-item img {
+  width: 627 !important;
+  height: 417px;
+  border-radius: 8px;
+}
+
+.carousel-indicators button{
+  background-color: #fff !important;
+}
+.carousel-caption p {
+  color: #fff !important;
+}
+.carousel-caption h5 {
+  color: #fff !important;
+}
+.carousel-control-prev-icon{
+  filter: invert(1);
+}
+.visually-hidden {
+  filter: invert(1);
+}
+
+
+
+
+
+
+
+/*
 .carousel-inner {
   width: 100%;
   height: 100%;
@@ -185,7 +251,7 @@ header {
   align-items: left;
   gap: 1.5rem;
   margin-top: 3.5rem;
-}
+} */
 
 .terrains {
   padding: 48px 20px;
