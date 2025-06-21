@@ -135,9 +135,12 @@ header {
   text-align: center;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10); /* Ombre */
-  background: radial-gradient(circle at 30% 30%, #00bfaf69, transparent 70%);
-  /* filter: blur(80px); */
+  /* background: radial-gradient(circle at 30% 30%, #00bfaf48, transparent 70%); */
   animation: move 8s linear infinite alternate;
+  color: #ffffff;
+  background-image: 
+    radial-gradient(circle at top left, #00bfae, #dfdfdf 40%),
+    radial-gradient(circle at bottom right, #00bfae, #dfdfdf 40%)
 }
 
 
@@ -167,7 +170,7 @@ header {
 }
 
 .title-hero h1 span {
-  color: #eb2323;
+  color: #01496a;
 }
 
 .title-hero button {
@@ -258,6 +261,7 @@ header {
 } */
 
 .terrains {
+  display: flex;
   padding: 48px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -269,29 +273,93 @@ header {
 }
 
 .slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: 420px 420px;
+  gap: 1rem;
   overflow-x: auto;
-  gap: 18px;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
+  width: 54rem;
+  height: 50rem;
+  padding-bottom: 100px;
 }
-.slider img {
-  width: 320px;
-  height: 210px;
+.slider .conponet{
+  width: 400px;
+  height: 600px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 20px;
   border-radius: 12px;
+  background-color: #e8eaed70;
+  border: 1px solid #00000021;
   box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10); /* Ombre violette */
   transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
-  border: 3px solid transparent;
 }
-.slider img:hover {
-  transform: scale(1.04);
+
+.slider .conponet img {
+  border-radius: 6px 10px 0px 0px;
+  width: 400px;
+  height: 300px;
+}
+
+
+
+.slider .conponet:hover {
+  transform: scale(1.02);
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.18); /* Accent violet */
-  border: 3px solid #7c3aed;                       /* Accent violet */
+  border: 1px solid #00bfae;                       /* Accent violet */
 }
+
+.title-terrain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.title-terrain h5 {
+  color: #00bfae;
+  font-size: 25px;
+  font-weight: 700;
+}
+.terrain-etoile {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.etoile-color i {
+  color: #00bfae;
+}
+.etoile-color-moitier i {
+  background: linear-gradient(90deg, #00bfae 50%, #000000 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Voir-resrve-terrain button{
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00bfae;
+}
+
+
+
+
+
+
 
 .filters {
   margin-top: 28px;
   display: flex;
+  flex-direction: column;
   gap: 14px;
   justify-content: center;
   align-items: center;
@@ -333,18 +401,3 @@ footer {
   letter-spacing: 0.5px;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  .slider img {
-    width: 90vw;
-    height: 160px;
-  }
-  .hero {
-    padding: 60px 10px 40px 10px;
-  }
-  .terrains {
-    padding: 24px 8px;
-  }
-}
-
-/* ...existing code...
